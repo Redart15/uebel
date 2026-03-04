@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "uebel",
 	"version": "${version}",
-	"name": "Example Mod",
+	"name": "Übel",
 	"description": "This mod aims to help new BTA modders.",
 	"authors": [
-		"Turnip Labs"
+		"Redart15"
 	],
 	"contact": {
 		"homepage": "",
@@ -16,20 +16,20 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"redart15.uebel.UebelMod"
 		],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"redart15.uebel.UebelMod"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"redart15.uebel.UebelMod"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"redart15.uebel.UebelMod"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+      "uebl.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",

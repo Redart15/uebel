@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "turniplabs.examplemod.mixin",
+  "package": "redart15.uebel.mixin",
   "compatibilityLevel": "JAVA_${java}",
   "injectors": {
     "defaultRequire": 1
