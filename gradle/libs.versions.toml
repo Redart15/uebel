@@ -39,6 +39,16 @@ gson = "2.13.2"
 commonsLang3 = "3.20.0"
 # This should match the version used by the current BTA release.
 lwjgl = "3.3.3"
+# Check this on https://maven.thesignalumproject.net/#/releases/sunsetsatellite/catalyst-core/
+catalyst-core = "2.2.0"
+# Check this on https://maven.thesignalumproject.net/#/releases/sunsetsatellite/catalyst-effects/
+catalyst-effects = "2.5.3"
+# Check this on https://modrinth.com/mod/bta-uselessnumerical/versions/
+dragonfly = "1.7.0-alpha.7"
+# Check this on https://maven.thesignalumproject.net/#/releases/useless/btwaila/
+btwaila = "1.2.2-7.3_04"
+# Check this on https://maven.thesignalumproject.net/#/releases/useless/btwaila/
+helver = "1.1.1"
 ##########################################################################
 
 [libraries]
@@ -56,6 +66,15 @@ gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 commonsLang3 = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commonsLang3" }
 # https://piston-data.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar
 clientJar = { group = "objects", name = "client", version = "43db9b498cb67058d2e12d394e6507722e71bb45" }
+
+# dependancies
+helver = { group = "com.github.redart15", name = "helver", version.ref = "helver" }
+catalyst-core = { group = "sunsetsatellite", name = "catalyst-core", version.ref = "catalyst-core" }
+catalyst-effects = { group = "sunsetsatellite", name = "catalyst-effects", version.ref = "catalyst-effects" }
+dragonfly = { group = "useless", name = "dragonfly", version.ref = "dragonfly" }
+
+# compile only
+btwaila = { group = "useless", name = "btwaila", version.ref = "btwaila" }
 
 [plugins]
 loom = { id = "net.fabricmc.fabric-loom", version.ref = "loom" }

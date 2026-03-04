@@ -53,6 +53,12 @@ dependencies {
 	implementation(libs.modMenu)
 	implementation(libs.legacyLwjgl)
 
+	compileOnly(libs.btwaila)
+	implementation(libs.helver)
+	implementation(libs.dragonfly)
+	implementation(libs.catalyst.core)
+	implementation(libs.catalyst.effects)
+
 	implementation(libs.slf4jApi)
 	implementation(libs.guava)
 	implementation(libs.log4j.slf4j2.impl)
