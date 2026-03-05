@@ -28,7 +28,7 @@ public class UebelModels implements ModelEntrypoint {
 	public void initItemModels(ItemModelDispatcher dispatcher) {
 		dispatcher.addDispatch(new ItemModelStandard(UebelItems.CONGEALED_BLOOD, null).setIcon(MOD_ID + ":item/congealed_blood"));
 		dispatcher.addDispatch(new ItemModelStandard(UebelItems.BLOODWURST_RAW, null).setIcon(MOD_ID + ":item/bloodwurst_raw"));
-		dispatcher.addDispatch(new ItemModelStandard(UebelItems.BLOODWURST, null).setIcon(MOD_ID + ":item/bloodwurst"));
+		dispatcher.addDispatch(new ItemModelStandard(UebelItems.BLOODWURST, null).setIcon(MOD_ID + ":item/bloodwurst_cooked"));
 		dispatcher.addDispatch(new ItemModelStandard(UebelItems.BUCKET_BLOOD, null).setIcon(MOD_ID + ":item/bucket_blood"));
 	}
 
