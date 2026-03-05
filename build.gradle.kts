@@ -124,7 +124,11 @@ tasks {
 			"fabricloader" to libs.versions.loader.get(),
 			"halplibe" to libs.versions.halplibe.get(),
 			"java" to libs.versions.java.get(),
-			"modmenu" to libs.versions.modMenu.get()
+			"modmenu" to libs.versions.modMenu.get(),
+			"helver" to libs.versions.modMenu.get(),
+			"catalystcore" to libs.versions.catalyst.core.get(),
+			"catalysteffects" to libs.versions.catalyst.effects.get(),
+			"dragonfly" to libs.versions.dragonfly.get()
 		)
 		inputs.properties(resourceMap)
 		filesMatching("fabric.mod.json") { expand(resourceMap) }

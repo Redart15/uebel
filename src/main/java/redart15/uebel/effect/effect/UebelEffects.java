@@ -14,25 +14,23 @@ import turniplabs.halplibe.helper.network.NetworkHandler;
 import java.util.ArrayList;
 import java.util.List;
 
-import static redart15.uebel.UebelMod.MOD_ID;
+import static redart15.uebel.UebelMod.*;
 
 public class UebelEffects {
-	private static boolean hasInit = false;
+	private static boolean init = false;
 	public static Effect blood_letting;
 	public static Effect bleeding;
 
-
-	private UebelEffects() {
-	}
-
+	private UebelEffects() {}
 	public static void init() {
-		if (!hasInit) {
-			hasInit = true;
-			assignEffects();
-			registerEffects();
-			if (!EnvironmentHelper.isServerEnvironment()) {
-				assignEffectRenderers();
-			}
+		if (init) {
+			return;
+		}
+		init = true;
+		assignEffects();
+		registerEffects();
+		if (!EnvironmentHelper.isServerEnvironment()) {
+			assignEffectRenderers();
 		}
 	}
 

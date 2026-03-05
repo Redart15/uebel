@@ -15,25 +15,23 @@
 	"license": "CC0-1.0",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"redart15.uebel.UebelMod"
-		],
-		"beforeGameStart": [
-			"redart15.uebel.UebelMod"
-		],
-		"afterGameStart": [
-			"redart15.uebel.UebelMod"
-		],
-		"recipesReady": [
-			"redart15.uebel.UebelMod"
-		]
+		"main": 							["redart15.uebel.UebelMod"],
+		"beforeGameStart": 		["redart15.uebel.UebelMod"],
+		"afterGameStart": 		["redart15.uebel.UebelMod"],
+		"recipesReady": 			["redart15.uebel.recipe.UebelRecipes"],
+		"initModels": 				["redart15.uebel.model.UebelModels"],
+		"client": 						["redart15.uebel.UebelClientMod"],
+		"beforeClientStart": 	["redart15.uebel.UebelClientMod"],
+		"afterClientStart":		["redart15.uebel.UebelClientMod"]
 	},
-	"mixins": [
-      "uebl.mixins.json"
-	],
+	"mixins": 							["uebl.mixins.json"],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",
 		"halplibe": ">=${halplibe}",
+		"helver": ">=1.1.0",
+		"dragonfly": ">=${dragonfly}",
+		"catalyst-core": ">=${catalystcore}",
+		"catalyst-effects": ">=${catalysteffects}",
 		"minecraft": "*",
 		"java": ">=${java}"
 	},

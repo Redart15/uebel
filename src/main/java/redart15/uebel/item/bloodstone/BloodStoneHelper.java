@@ -8,7 +8,7 @@ import net.minecraft.client.render.tessellator.Tessellator;
 import net.minecraft.core.entity.Entity;
 import net.minecraft.core.entity.player.Player;
 import net.minecraft.core.item.ItemStack;
-import redart15.uebel.model.ItemRenderSpecial;
+import redart15.uebel.model.item.ItemRenderSpecial;
 
 public class BloodStoneHelper {
 

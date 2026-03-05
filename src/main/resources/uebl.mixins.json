@@ -1,5 +1,8 @@
 {
   "required": true,
+  "mixinextras": {
+    "minVersion": "0.5.0"
+  },
   "package": "redart15.uebel.mixin",
   "compatibilityLevel": "JAVA_${java}",
   "injectors": {

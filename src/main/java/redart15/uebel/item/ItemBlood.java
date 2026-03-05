@@ -1,27 +1,25 @@
-package redart15.uebel.item.bloodstone;
+package redart15.uebel.item;
 
 import net.minecraft.client.render.block.model.BlockModelDispatcher;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockLogic;
 import net.minecraft.core.block.Blocks;
 import net.minecraft.core.block.tag.BlockTags;
-import net.minecraft.core.entity.EntityItem;
 import net.minecraft.core.entity.player.Player;
 import net.minecraft.core.enums.EnumBlockSoundEffectType;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
-import net.minecraft.core.player.inventory.container.ContainerInventory;
 import net.minecraft.core.util.helper.Side;
 import net.minecraft.core.util.phys.AABB;
 import net.minecraft.core.world.World;
 import redart15.helver.metadata.BlockMetadata;
-import redart15.uebel.entity.TriggerOnPickup;
-import redart15.uebel.model.BlockModelOverlay;
+import redart15.uebel.block.UebelBlocks;
+import redart15.uebel.model.block.BlockModelOverlay;
 
-public class ItemCongealedBlood extends Item implements TriggerOnPickup {
-	public static final Block<?> OVERLAY_BLOOD = Blocks.OVERLAY_PEBBLES;
+public class ItemBlood extends Item{
+	public static final Block<?> OVERLAY_BLOOD = UebelBlocks.OVERLAY_BLOOD;
 
-	public ItemCongealedBlood(String translationKey, String namespaceId, int id) {
+	public ItemBlood(String translationKey, String namespaceId, int id) {
 		super(translationKey, namespaceId, id);
 	}
 
@@ -85,20 +83,7 @@ public class ItemCongealedBlood extends Item implements TriggerOnPickup {
 			world.playBlockSoundEffect(player, blockX + 0.5F, blockY + 0.5F, blockZ + 0.5F, OVERLAY_BLOOD, EnumBlockSoundEffectType.PLACE);
 			itemstack.consumeItem(player);
 			return true;
-		} else {
-			return false;
 		}
-
+		return false;
 	}
-
-	@Override
-	public void onPickUp(Player player, EntityItem entityItem, ContainerInventory container, ItemStack itemStack, boolean hotbarOffset) {
-		if (!player.getGamemode().canInteract()) {
-			return;
-		}
-		player.heal(itemStack.stackSize);
-//		player.world.playSoundAtEntity(player, player, "aether_battle:bloodstone.pickup", 0.2F + ((EntityAccessor) player).getRandom().nextFloat() * 0.2f, 0.2F + ((EntityAccessor) player).getRandom().nextFloat());
-		entityItem.remove();
-	}
-
 }

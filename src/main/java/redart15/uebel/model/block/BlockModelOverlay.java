@@ -1,4 +1,4 @@
-package redart15.uebel.model;
+package redart15.uebel.model.block;
 
 import net.minecraft.client.render.LightmapHelper;
 import net.minecraft.client.render.block.model.BlockModelStandard;

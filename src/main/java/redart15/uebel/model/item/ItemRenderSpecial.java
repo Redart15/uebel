@@ -1,4 +1,4 @@
-package redart15.uebel.model;
+package redart15.uebel.model.item;
 
 import net.minecraft.client.render.tessellator.Tessellator;
 import net.minecraft.core.entity.player.Player;
