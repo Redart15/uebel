@@ -13,6 +13,7 @@ public class UebelConfig {
 	public static void init(){
 		if(init) return;
 		init = true;
+		loadProperties();
 	}
 
 	private static void loadProperties(){
