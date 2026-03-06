@@ -1,0 +1,14 @@
+[
+  {
+    "name": "uebel:furnace/grill_bloodwurst",
+    "type": "minecraft:smelting",
+    "input": {
+      "stack": {
+        "id": "uebel:item/food_bloodwurst_raw"
+      }
+    },
+    "output": {
+      "id": "uebel:item/food_bloodwurst_cooked"
+    }
+  }
+]

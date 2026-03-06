@@ -1,0 +1,22 @@
+[
+  {
+    "name": "uebel:workbench/bloodwurst",
+    "type": "minecraft:crafting/shapeless",
+    "inputs": [
+      {
+        "stack": {
+          "id": "minecraft:item/food_porkchop_raw"
+        }
+      },
+      {
+        "stack": {
+          "id": "uebel:item/bucket_blood"
+        }
+      }
+    ],
+    "result": {
+      "id": "uebel:item/food_bloodwurst_raw",
+      "amount": 2
+    }
+  }
+]
