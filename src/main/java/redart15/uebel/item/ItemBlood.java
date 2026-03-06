@@ -83,7 +83,9 @@ public class ItemBlood extends Item{
 			world.playBlockSoundEffect(player, blockX + 0.5F, blockY + 0.5F, blockZ + 0.5F, OVERLAY_BLOOD, EnumBlockSoundEffectType.PLACE);
 			itemstack.consumeItem(player);
 			return true;
+		} else {
+			return false;
 		}
-		return false;
+
 	}
 }
