@@ -48,7 +48,7 @@ dragonfly = "1.7.0-alpha.7"
 # Check this on https://maven.thesignalumproject.net/#/releases/useless/btwaila/
 btwaila = "1.2.2-7.3_04"
 # Check this on https://maven.thesignalumproject.net/#/releases/useless/btwaila/
-helver = "1.1.1"
+helver = "1.1.2"
 ##########################################################################
 
 [libraries]

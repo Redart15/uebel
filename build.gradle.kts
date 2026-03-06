@@ -125,7 +125,7 @@ tasks {
 			"halplibe" to libs.versions.halplibe.get(),
 			"java" to libs.versions.java.get(),
 			"modmenu" to libs.versions.modMenu.get(),
-			"helver" to libs.versions.modMenu.get(),
+			"helver" to libs.versions.helver.get(),
 			"catalystcore" to libs.versions.catalyst.core.get(),
 			"catalysteffects" to libs.versions.catalyst.effects.get(),
 			"dragonfly" to libs.versions.dragonfly.get()
