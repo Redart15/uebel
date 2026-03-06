@@ -2,6 +2,7 @@ package redart15.uebel.item;
 
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemFood;
+import net.minecraft.core.item.Items;
 import redart15.uebel.config.UebelConfig;
 import turniplabs.halplibe.helper.ItemBuilder;
 
@@ -30,14 +31,15 @@ public class UebelItems {
 	private static void createBlood() {
 		CONGEALED_BLOOD = new ItemBuilder(MOD_ID).build(new ItemBlood("congealed.blood", itemKey("congealed_blood"), UebelConfig.nextItemID()));
 		BUCKET_BLOOD = new ItemBuilder(MOD_ID)
-			.build(new ItemBlood("bucket.blood", itemKey("bucket_blood"), UebelConfig.nextItemID()));
-
+			.setStackSize(1)
+			.setContainerItem(() -> Items.BUCKET)
+			.build(new ItemBloodBucket("bucket.blood", itemKey("bucket_blood"), UebelConfig.nextItemID()));
 	}
 
 	private static void createFood() {
 		BLOODWURST_RAW = new ItemBuilder(MOD_ID)
-			.build(new ItemFood("bloodwurst.raw", itemKey("bloodwurst_raw"), UebelConfig.nextItemID(), 4, 32, true, 8));
+			.build(new ItemFood("bloodwurst.raw", itemKey("food_bloodwurst_raw"), UebelConfig.nextItemID(), 3, 24, true, 8));
 		BLOODWURST = new ItemBuilder(MOD_ID)
-			.build(new ItemFood("bloodwurst.raw", itemKey("bloodwurst"), UebelConfig.nextItemID(), 4, 16, true, 8));
+			.build(new ItemFood("bloodwurst.cooked", itemKey("food_bloodwurst_cooked"), UebelConfig.nextItemID(), 3, 8, true, 8));
 	}
 }
